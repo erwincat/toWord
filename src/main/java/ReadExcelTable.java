@@ -2,8 +2,6 @@
  * Created by wuchangming on 17/1/6.
  */
 
-import org.apache.poi.hssf.extractor.ExcelExtractor;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -96,23 +94,23 @@ public class ReadExcelTable{
 //                    default:
 //                        System.out.println();
 //                }
-
+//
 //            }
         }
         return list;
 
     }
 
-    //直接抽取excel中的数据
-    public static void extractor() throws Exception{
-        InputStream ips=new FileInputStream("d://test2-1.xls");
-        HSSFWorkbook wb=new HSSFWorkbook(ips);
-        ExcelExtractor ex=new ExcelExtractor(wb);
-        ex.setFormulasNotResults(true);
-        ex.setIncludeSheetNames(false);
-        String text=ex.getText();
-        System.out.println(text);
-    }
+//    //直接抽取excel中的数据
+//    public static void extractor() throws Exception{
+//        InputStream ips=new FileInputStream("d://test2-1.xls");
+//        HSSFWorkbook wb=new HSSFWorkbook(ips);
+//        ExcelExtractor ex=new ExcelExtractor(wb);
+//        ex.setFormulasNotResults(true);
+//        ex.setIncludeSheetNames(false);
+//        String text=ex.getText();
+//        System.out.println(text);
+//    }
 
 
 }
